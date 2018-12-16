@@ -1,0 +1,203 @@
+<!--1. Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.--->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FriendFinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>-->
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Survey Questions</h1>
+            <hr class="my-4">
+            <h2><strong>About You</strong></h2>
+
+            <form>
+                <div class="name">
+                    <label for="name"><h3>Name (Required)</h3></label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+
+                <div class="photo">
+                    <label for="photo"><h3>Link to Photo Image (Required)</h3></label>
+                    <input type="text" class="form-control" id="photoLink">
+                </div>
+            </form>
+
+            <hr class="my-4">
+
+            <h2><strong>Question 1</strong></h2>
+            <h3>It's Friday night and clubbing is your main objective.</h3>
+            <select class="selection" id="q1" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h2><strong>Question 2</strong></h2>
+            <h3>Your mind wanders a lot even when you are talking to someone.</h3>
+            <select class="selection" id="q2" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h2><strong>Question 3</strong></h2>
+            <h3>You have to stay current with the latest fashion trends.</h3>
+            <select class="selection" id="q3" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h2><strong>Question 4</strong></h2>
+            <h3>You have to see the next Marvel movie in theaters.</h3>
+            <select class="selection" id="q4" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h2><strong>Question 5</strong></h2>
+            <h3>Your idea of a fun evening is Netflix and chill.</h3>
+            <select class="selection" id="q5" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h2><strong>Question 6</strong></h2>
+            <h3>You prefer hiking, biking, and being active on a daily basis.</h3>
+            <select class="selection" id="q6" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h2><strong>Question 7</strong></h2>
+            <h3>You get angry if a person's cleanliness is not to your standards.</h3>
+            <select class="selection" id="q7" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h2><strong>Question 8</strong></h2>
+            <h3>During a dispute, you like to be confrontational.</h3>
+            <select class="selection" id="q8" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h2><strong>Question 9</strong></h2>
+            <h3>You are accepting of other people's views and opinions.</h3>
+            <select class="selection" id="q9" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h2><strong>Question 10</strong></h2>
+            <h3>For your, patience is a virtue.</h3>
+            <select class="selection" id="q10" style="height:30px;">
+                <option>Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+
+            <br>
+
+            <a href="survey.html">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="surveySubmit-btn" role="button">
+                    <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                    Submit
+                </button>
+            </a> 
+        </div>
+
+        <hr>
+        
+        <footer class="container"> 
+            <div>
+                <p>
+                    <a href="/api/friends">API Friends List</a>
+                    |
+                    <a href="https://github.com/miriam-hidalgo/FriendFinder">Github Repo</a>
+                </p>
+            </div>
+        </footer>
+    </div> 
+    <script type="text/javascript">
+         $("#surveySubmit-btn").on("click", function(event) {
+            //console.log("Survey submit button pressed")
+            event.preventDefault();
+            var userInput = {
+                name: $("#name").val(),
+                photo: $("#photoLink").val(),
+                q1: $("#q1").val(),
+                q2: $("#q2").val(),
+                q3: $("#q3").val(),
+                q4: $("#q4").val(),
+                q5: $("#q5").val(),
+                q6: $("#q6").val(),
+                q7: $("#q7").val(),
+                q8: $("#q8").val(),
+                q9: $("#q9").val(),
+                q10: $("#q10").val()
+            };
+            //console.log(userInput);
+
+            // Question: What does this code do??
+            $.post("/api/friends", userInput)
+                .then(function(data) {
+                console.log(data);
+            });
+         });
+    </script>
+</body>
+</html>
