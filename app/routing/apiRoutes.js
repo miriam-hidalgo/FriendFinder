@@ -1,4 +1,4 @@
-const friends = require("../data/friends")
+const friends = require("../data/friends");
 
 // A GET route with the url `/api/friends`
 // Displays JSON of all possible friends
@@ -6,29 +6,13 @@ module.exports = function(app){
     app.get("/api/friends", function(req, res) {
         return res.json(friends);
         });
-
 //A POST route `/api/friends`
 //Takes in JSON user survey input
 //Handles incoming survey results & compatibility logic
     app.post("/api/friends", function(req, res) {
-            //let matchedFriend = friends[0];
-            //let totalDifference = 0;]
-            function calculate(userInput){
-                $.each(friends, function (index, value){
-                    console.log("check:"+ index, value);
-                    // $.each(userInput, function(){
-                    // });
-               });
-            }
-    
+        console.log(userInput)
     });
 };
-
-
-
-
-
-
 
 //Compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the `totalDifference`.
 //Example:

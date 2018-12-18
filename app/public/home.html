@@ -23,12 +23,10 @@
             <h2>Answer a few basic questions.</h2>
             <h2>Then find the friend with the greatest compatibility!</h2>
             <br>
-            <a href="survey.html">
-                <button type="button" class="btn btn-primary btn-lg" role="button" id="goToSurvey-btn">
-                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-                    Go to Survey
-                </button>
-            </a> 
+            <button type="button" class="btn btn-primary btn-lg" role="button" id="goToSurvey-btn">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                Go to Survey
+            </button>   
         </div>
 
         <footer> 
@@ -43,8 +41,9 @@
     </div>
     <script  type="text/javascript">
         $("#goToSurvey-btn").on("click", function(event) {
-            console.log("Go to button pressed")
             event.preventDefault();
+            console.log("Go to button pressed")
+            $(location).attr('href', "survey");
         });
     </script>
 </body>
